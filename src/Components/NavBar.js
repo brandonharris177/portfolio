@@ -1,7 +1,7 @@
 import React from 'react';
-import css from './NavBar.css'
+import './NavBar.css';
 
-export default function Header() {
+export default function NavBar() {
 
   return (
     <>
@@ -10,8 +10,6 @@ export default function Header() {
           <img className="logo" src={ require ('./images/logo.png') } /><h2 className="title underline">Brandon Harris</h2>
         </span>
         <nav>
-            <h3>Nav Bar here</h3>
-            <h3>second item</h3>
         </nav>
       </span>
     </>
