@@ -24,6 +24,7 @@ export default function Body() {
     justify-content: flex-end;
     height: 500px;
     width: 100%;
+    border: 2px solid blue;
   `
 
   const Section3 = styled.section`
@@ -53,15 +54,25 @@ export default function Body() {
   const CoreSkills = styled.div`
     display: flex;
     flex-flow: column wrap;
+    border: 2px solid green;
+    width: 100%;
   `
 
   const SkillsText = styled.div`
     display: flex;
+    width: 100%
+    border: 2px solid red;
+    justify-content: space-around;
   `
 
   const SkillsSection = styled.div`
     display: flex;
     flex-flow: column wrap;
+    border: 2px solid purple;
+  `
+
+  const SkillsBullet = styled.p`
+    font-size: 2rem;
   `
 
   return (
@@ -79,10 +90,10 @@ export default function Body() {
       </Section1>
       <Section2>
         <CoreSkills>
-          <h3>Core Skills</h3>
+        <h3>Core Skills</h3>
           <SkillsText>
             <SkillsSection>
-              <p>
+              <SkillsBullet>
               -JavaScript<br/>
               -Node.js<br/>
               -Express.js<br/>
@@ -90,10 +101,10 @@ export default function Body() {
               -RESTful API<br/>
               -Knex.js<br/>
               -LESS/SCSS<br/>
-              </p>
+              </SkillsBullet>
             </SkillsSection>
             <SkillsSection>
-              <p>
+              <SkillsBullet>
               -Python<br/>
               -SQL<br/>
               -GraphQL<br/>
@@ -101,10 +112,10 @@ export default function Body() {
               -HTML/CSS<br/>
               -Postgress<br/>
               -Insomnia/Postman<br/>
-              </p>
+              </SkillsBullet>
             </SkillsSection>
             <SkillsSection>
-              <p>
+              <SkillsBullet>
               -React.js<br/>
               -Redux<br/>
               -Axios<br/>
@@ -112,7 +123,7 @@ export default function Body() {
               -Unit Testing<br/>
               -Integration Testing<br/>
               -Styled Components<br/>
-              </p>
+              </SkillsBullet>
             </SkillsSection>
           </SkillsText>
         </CoreSkills>
