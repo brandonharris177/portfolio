@@ -16,7 +16,6 @@ export default function Body() {
     display: flex;
     height: 500px;
     width: 100%;
-    margin-top: 3%;
     border-bottom: 1px solid black;
   `
 
